@@ -1,0 +1,74 @@
+layer name: convolution
+function exection: convolution
+time exection:0.001901
+pass
+
+
+layer name: relu
+function exection: applyrelu
+time exection:5.1e-05
+pass
+
+
+layer name: pool
+function exection: maxpooling
+time exection:0.000253
+pass
+
+
+layer name: convolution
+function exection: convolution
+time exection:0.00243
+pass
+
+
+layer name: relu
+function exection: applyrelu
+time exection:4.7e-05
+pass
+
+
+layer name: pool
+function exection: maxpooling
+time exection:0.000111
+pass
+
+
+layer name: convolution
+function exection: convolution
+time exection:0.002026
+pass
+
+
+layer name: relu
+function exection: applyrelu
+time exection:3.7e-05
+pass
+
+
+layer name: pool
+function exection: maxpooling
+time exection:0.000122
+pass
+
+
+
+layer name: flatten
+function exection: flattenedOutput
+time exection:2.4e-05
+pass
+
+
+layer name: dense layer
+function exection: denselayer
+time exection:0.000363
+pass
+
+
+
+layer name: dense layer
+function exection: denselayer
+time exection:7e-06
+pass
+
+

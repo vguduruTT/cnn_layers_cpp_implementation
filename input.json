@@ -1,0 +1,97 @@
+{
+    "layer1": {
+      "layer": "conv",
+      "shape": 32,
+      "input": "input1.npy",
+      "weight": "weights/one.weight.npy",
+      "bias": "bias/one.bias.npy",
+      "py_output": "output/layer_1_output.npy",
+      "this_layer": "layer1_output.txt"
+    },
+    "layer2": {
+      "shape": 30,
+      "layer": "relu",
+      "input": "layer1_output.txt",
+      "py_output": "output/layer_2_output.npy",
+      "this_layer": "layer2_output.txt"
+    },
+    "layer3": {
+      "shape": 30,
+      "layer": "pool",
+      "input": "layer2_output.txt",
+      "py_output": "output/layer_3_output.npy",
+      "this_layer": "layer3_output.txt"
+    },
+    "layer4": {
+      "shape": 29,
+      "layer": "conv1",
+      "input": "layer3_output.txt",
+      "py_output": "output/layer_4_output.npy",
+      "this_layer": "layer4_output.txt",
+      "weight": "weights/four.weight.npy",
+      "bias": "bias/four.bias.npy"
+    },
+    "layer5": {
+      "shape": 27,
+      "layer": "relu",
+      "input": "layer4_output.txt",
+      "py_output": "output/layer_5_output.npy",
+      "this_layer": "layer5_output.txt"
+    },
+    "layer6": {
+      "shape": 27,
+      "layer": "pool",
+      "input": "layer5_output.txt",
+      "py_output": "output/layer_6_output.npy",
+      "this_layer": "layer6_output.txt"
+    },
+    "layer7": {
+      "shape": 26,
+      "layer": "conv1",
+      "input": "layer6_output.txt",
+      "py_output": "output/layer_7_output.npy",
+      "this_layer": "layer7_output.txt",
+      "weight": "weights/seven.weight.npy",
+      "bias": "bias/seven.bias.npy"
+    },
+    "layer8": {
+      "shape": 24,
+      "layer": "relu",
+      "input": "layer7_output.txt",
+      "py_output": "output/layer_8_output.npy",
+      "this_layer": "layer8_output.txt"
+    },
+    "layer9": {
+      "shape": 24,
+      "layer": "pool",
+      "input": "layer8_output.txt",
+      "py_output": "output/layer_9_output.npy",
+      "this_layer": "layer9_output.txt"
+    },
+    "layer91": {
+      "shape": 23,
+      "layer": "flatten",
+      "input": "layer9_output.txt",
+      "py_output": "output/layer_10_output.npy",
+      "this_layer": "layer10_output.txt"
+    },
+    "layer92": {
+      "shape": 1587,
+      "layer": "dense",
+      "input": "layer10_output.txt",
+      "weight": "weights/eleven.weight.npy",
+      "bias": "bias/eleven.bias.npy",
+      "py_output": "output/layer_11_output.npy",
+      "this_layer": "layer11_output.txt"
+    },
+    "layer93": {
+      "shape": 10,
+      "layer": "dense1",
+      "input": "layer11_output.txt",
+      "weight": "weights/twelve.weight.npy",
+      "bias": "bias/twelve.bias.npy",
+      "py_output": "output/layer_12_output.npy",
+      "this_layer": "layer12_output.txt"
+    }
+  }
+  
